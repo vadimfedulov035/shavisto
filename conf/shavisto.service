@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram bot transcribing latin in Esperanto Shavian
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/root/shavisto
+ExecStart=/root/shavisto/shavisto.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
